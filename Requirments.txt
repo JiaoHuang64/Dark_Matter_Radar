@@ -1,0 +1,41 @@
+# Core dependencies
+numpy
+pandas
+scipy
+matplotlib
+tqdm
+lxml
+string
+
+# Machine Learning
+scikit-learn
+joblib
+
+# Web scraping and HTTP requests
+requests
+beautifulsoup4
+
+# PDF and Image Processing
+pdf2image
+Pillow
+fitz  # PyMuPDF
+opencv-python  # OpenCV for image processing
+
+# File and archive handling
+shutil
+tarfile
+hashlib
+
+# System utilities
+os
+time
+random
+datetime
+
+# Natural Language Processing
+re  # Regular expressions
+
+# arXiv API
+arxiv
+
+# For MacOS users: Please install via Homebrew `brew install poppler`
