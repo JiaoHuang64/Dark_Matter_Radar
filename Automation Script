@@ -1,0 +1,14 @@
+tell application "Terminal"
+	-- Create and run virtual environment
+	do script "python3 -m venv /Users/jiaohuangbixia/Downloads/1/MODELTRAIN/.venv"
+	delay 10
+	-- Download the library requirements
+	do script "source /Users/jiaohuangbixia/Downloads/1/MODELTRAIN/.venv/bin/activate; pip install requests beautifulsoup4 pillow pandas numpy PyMuPDF pdf2image mastodon.py imagehash opencv-python-headless arxiv scikit-learn joblib"
+	delay 120 -- Delay 3 minutes
+	-- Run the first code
+	do script "source /Users/jiaohuangbixia/Downloads/1/MODELTRAIN/.venv/bin/activate; python3 '/Users/jiaohuangbixia/Downloads/1/MODELTRAIN/SCRAPE.py'"
+	delay 4000 -- delay 30 minutes
+	-- Run the second code
+	do script "source /Users/jiaohuangbixia/Downloads/1/MODELTRAIN/.venv/bin/activate; python3 '/Users/jiaohuangbixia/Downloads/1/MODELTRAIN/MP.py'"
+	delay 1500 -- delay 30 minutes
+end tell
